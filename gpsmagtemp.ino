@@ -57,7 +57,7 @@ void setup() {
 
   // 1-minute delay before starting transmission
   Serial.println("Waiting for 1 minute before transmission...");
-  delay(60000);  // Wait for 60 seconds
+  delay(1000);  // Wait for 1 seconds
 }
 
 void readMagnetometer(float &magX, float &magY, float &magZ) {
@@ -134,7 +134,7 @@ void loop() {
     // Add BME680 data
     dataString += String(bme.temperature, 1) + ",";     // Temperature
     dataString += String(bme.humidity, 1) + ",";        // Humidity
-    dataString += String(bme.pressure / 100.0, 1) + ","; // Pressure in hPa
+    dataString += String(bme.pressure / 1000.0000, 6) + ","; // Pressure in kPa
     dataString += String(bme.gas_resistance);            // Gas Resistance
 
     // Send the data to the XBee and Serial Monitor
@@ -143,4 +143,3 @@ void loop() {
   
   delay(500);  // Delay between loops (0.5 second)
 }
-
