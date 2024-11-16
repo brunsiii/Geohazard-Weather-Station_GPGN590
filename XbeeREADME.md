@@ -23,17 +23,17 @@
 4. Baud Rate = 9600; Data Bits = 8; Parity = None; Stop Bits = 1; Flow Control = None
 5. Click "Finish"
 6. Repeat steps 1-5 for a second XBee
-## Intialize Base Station
+### Intialize Base Station
 1. Click on the first XBee and then click the gear icon to access its settings.
 2. Under section title "MAC/PHY" configure the following settings: Network ID = 1001; Broad ast Multi-Transmits = 3; TX Power Level = Highest [4]
 3. Under section title "Network" configure the following settings: Routing/Messaging Mode = Indirect Msg Coordinator [1]
 4. Under section title "Addressing" configure the following settings: Destination Address High = 0; Destination Address Low = FFFF; Node Identifier = Base
-## Initialize Rover Station
+### Initialize Rover Station
 1. Click on the second XBee and then click the gear icon to access its settings.
 2. Under section title "MAC/PHY" configure the following settings: Network ID = 1001; Broad ast Multi-Transmits = 3; TX Power Level = Highest [4]
 3. Under section title "Network" configure the following settings: Routing/Messaging Mode = Indirect Msg Coordinator [1]
 4. Under section title "Addressing" configure the following settings: Destination Address High = 0; Destination Address Low = FFFF; Node Identifier = Rover
-### Communicating Data
+## Communicating Data
 1. Plug in XBee Shield V2 For Arduino to Base Arduino Mega 2560. Repeat for Rover.
 2. Unplug Rover XBee S3B from Dev Board and plug into Rover XBee Shield V2 for Arduino. Repeat for Base.
 3. Ensure that the PC-MCU switch on the XBee Shield V2 for Arduino board is set to PC for both Shields.
