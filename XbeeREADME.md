@@ -11,7 +11,7 @@
 - Arduino Mega 2560
 - BN-880 GPS
 -     https://www.amazon.com/Geekstory-Navigation-Raspberry-Aircraft-Controller/dp/B078Y6323W?th=1
-- XBee Shield V2 For Arduino
+- XBee Shield V2 For Arduino (2)
 -     https://www.tinyosshop.com/Xbee%20Shield
 ## Setting Base and Rover Pairs in XCTU
 1. Plug both XBee Pro S3B into XBee Grove Dev Board and connect Dev Board to computer via USB.
@@ -34,8 +34,13 @@
 3. Under section title "Network" configure the following settings: Routing/Messaging Mode = Indirect Msg Coordinator [1]
 4. Under section title "Addressing" configure the following settings: Destination Address High = 0; Destination Address Low = FFFF; Node Identifier = Rover
 ## Communicating Data
-1. Plug in XBee Shield V2 For Arduino to Arduino Mega 2560.
-2. Unplug Rover XBee S3B from Dev Board and plug into XBee Shield V2 for Arduino.
-3. Ensure that the PC-MCU switch on the XBee Shield V2 for Arduino board is set to PC.
-4. Upload code to Arduino to send GPS/Magnetometer data to Rover XBee to be communicated to basestation.
-5. Once code is uploaded, switch PC to MCU. This allows the Magnetometer/GPS data to be transmitted to the Base station.
+1. Plug in XBee Shield V2 For Arduino to Base Arduino Mega 2560. Repeat for Rover.
+2. Unplug Rover XBee S3B from Dev Board and plug into Rover XBee Shield V2 for Arduino. Repeat for Base.
+3. Ensure that the PC-MCU switch on the XBee Shield V2 for Arduino board is set to PC for both Shields.
+4. Upload gpsmagxbee.ino code to Rover Arduino to send GPS/Magnetometer data to Rover XBee to be communicated to Base.
+5. Upload BaseStation1.ino code to Base Arduino to receive GPS/Magnetometer data from Rover XBee.
+6. If saving code to SD card, add SD card breakout board to third Arduino. Ensure SD card is inserted.
+7. Connect pins D18 and D19 on Rover to pins D19 and D18 on Base respectively.
+8. Once code is uploaded and base station arduino wire connections made between Serial1 pins, switch PC to MCU on both XBee Shields. This allows the Magnetometer/GPS data to be transmitted to the Base station.
+9. Unplug serial USBs from all three Arduinos. Plug 9V batteries into each Arduino.
+10. You can check that data is being received and saved by powering off the saving base station Arduino, unplugging the SD card, and loading onto a laptop. Data should be in a comma separated .TXT file.
