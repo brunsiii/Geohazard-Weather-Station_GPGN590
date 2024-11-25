@@ -15,7 +15,7 @@ The rover station is designed to measure GPS, Magnetometer, temperature, humidit
 2. Place intialized Rover XBee Pro S3B into Rover XBee Shield. For instructions on XBee initialization see XBeeREADME.md.
 3. Connect GPS Magnetometer and BME 886 to Arduino according to pinout diagram.
 4. Connect pins D18 and D19 of Receiving Arduino to pins D19 and D18 of Saving Arduino. Connecting these respective RX and TX pins establishes the Serial1 connection referenced in the BaseStation1.ino and SavingBaseStation.ino codes.
-5. Insert MicroSD card into Ethernet/SD Card Shield.\
+5. Insert MicroSD card into Ethernet/SD Card Shield.
 ## Uploading Code
 1. Plug Arduino into a computer via USB.
 2. Compile and upload gpsmagtemp.ino to Transmitting Arduino. Ensure that the MCU-PC switch is set to PC on XBee Shield.
