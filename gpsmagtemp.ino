@@ -146,3 +146,6 @@ void loop() {
   
   delay(500);  // Delay between loops (0.5 second)
 }
+
+// References
+// OpenAI. (2024). ChatGPT (October 15 version) [Large language model].
