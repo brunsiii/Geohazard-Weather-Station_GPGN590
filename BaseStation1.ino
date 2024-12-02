@@ -22,3 +22,6 @@ void loop() {
   // Optional: Add a small delay to avoid excessive CPU usage
   delay(5);
 }
+
+// References
+// OpenAI. (2024). ChatGPT (November 14 version) [Large language model].
