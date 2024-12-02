@@ -1,4 +1,6 @@
-# This code was originally adapted from code used in Module 7 of this class originally sourced from Noah Perkovich and Ethan Deal. ChatGPT was used to generate portions of this code (OpenAI, 2024, October 15 Version).
+// This code was originally adapted from code used in Module 7 of this class originally sourced from Noah Perkovich and Ethan Deal. 
+// ChatGPT was used to generate portions of this code (OpenAI, 2024, October 15 Version).
+// Specifically, ChatGPT was used to initialize communication via serial, and to communicate data from serial monitor to XBee and vice versa, as well as intializing data out through pins zero and one on the Arduino (OpenAI, 2024, October 15 Version).
 #include <Wire.h>
 #include <TinyGPS++.h>
 #include <SPI.h>
