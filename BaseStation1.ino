@@ -1,4 +1,4 @@
-// ChatGPT was consulted to genearte and troubleshoot the following code that reads and prints the received Xbee data to the different Serial ports (OpenAI, November 14 Version).
+// ChatGPT was consulted to genearte and troubleshoot the following code that reads and prints the received Xbee data to the different Serial ports (OpenAI, 2024, November 14 Version).
 // Setup function
 void setup() {
   // Start communication with Serial Monitor (USB)
