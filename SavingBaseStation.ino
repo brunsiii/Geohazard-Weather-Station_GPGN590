@@ -1,4 +1,5 @@
 // This code was adpated from Arduino Workshop, "Project 22 - Writing Data to the Memory Card" such that the communicated data is saved to an SD card.
+// ChatGPT was consulted to troubleshoot the saving mechanisms of the following code (OpenAI, 2024, November 14 Version).
 // Project 22 - Writing Data to the Memory Card
 #include <SD.h>
 int b = 0;
@@ -44,3 +45,6 @@ void loop()
   }
   delay(5);
 }
+
+// References
+// 
