@@ -9,6 +9,7 @@ The rover station is designed to measure GPS, Magnetometer, temperature, humidit
 - BN-880 GPS
 -     https://www.amazon.com/Geekstory-Navigation-Raspberry-Aircraft-Controller/dp/B078Y6323W?th=1
 - BME 886 Temperature/Pressure/Humidity Sensor
+-     https://www.adafruit.com/product/5046
 
 ## Construction Instructions
 1. Stack XBee Shield V2 for Arduino on top of the Arduino Mega 2560 - this is the Transmitting Arduino.
