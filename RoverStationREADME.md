@@ -2,6 +2,7 @@
 The rover station is designed to measure GPS, Magnetometer, temperature, humidity, and pressure data and then compile and transmit all data and store them on an SD card.
 ## Hardware Requirements
 - Arduino Mega 2560
+-     https://store.arduino.cc/products/arduino-mega-2560-rev3
 - XBee Pro S3B
 -     https://www.digi.com/products/embedded-systems/digi-xbee/rf-modules/sub-1-ghz-rf-modules/xbee-pro-xsc
 - XBee Shield V2 For Arduino
