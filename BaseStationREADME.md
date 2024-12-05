@@ -15,7 +15,7 @@ The base station is designed to receive transmitted data and store them on an SD
 2. Place intialized Base XBee Pro S3B into Base XBee Shield. For instructions on XBee initialization see XBeeREADME.md.
 3. Stack Ethernet/SD Card Shield on top of Arduino Mega 2560 - this is the Saving Arduino.
 4. Connect pins D18 and D19 of Receiving Arduino to pins D19 and D18 of Saving Arduino. Connecting these respective RX and TX pins establishes the Serial1 connection referenced in the BaseStation1.ino and SavingBaseStation.ino codes.
-5. Insert MicroSD card into Ethernet/SD Card Shield.\
+5. Insert MicroSD card into Ethernet/SD Card Shield.
 ## Uploading Code
 1. Plug both Arduinos into a computer via USB.
 2. Compile and upload BaseStation1.ino to Receviing Arduino. Ensure that the MCU-PC switch is set to PC on XBee Shield.
@@ -23,4 +23,5 @@ The base station is designed to receive transmitted data and store them on an SD
 ## Communicating with Rover and Saving Data
 1. Once the Rover has been properly initialized, flip PC to MCU on XBee Shield. See RoverStationREADME.md for instructions on how to construct and intialize the Rover Station.
 2. To run independently, unplug Arduinos from laptop and power with 9V batteries.
-3. Data should flow and be saved to the SD card.
+3. Data should flow to Receiving Arduino and be saved to the SD card on the Saving Arduino.
+4. Always power down arduinos before inserting or removing the SD card.
