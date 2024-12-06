@@ -15,7 +15,7 @@ The rover station is designed to measure GPS, Magnetometer, temperature, humidit
 ## Construction Instructions
 1. Stack XBee Shield V2 for Arduino on top of the Arduino Mega 2560 - this is the Transmitting Arduino.
 2. Place intialized Rover XBee Pro S3B into Rover XBee Shield. For instructions on XBee initialization see XBeeREADME.md.
-3. Connect GPS Magnetometer and BME 688 to Transmitting Arduino. The GPS Magnetometer connects directly to the RX1 and TX1 pins on the Arduino, and to the 5v and GND pins on the XBee Shield. The BME 688 connects to the 3.5V and GND as well as the SCA adn SCL pins on the Xbee Shield. The RX, TX, SCA, and SCL pins are for transmitting data from the sensor to the base station.
+3. Connect GPS Magnetometer and BME 688 to Transmitting Arduino. The GPS Magnetometer connects directly to the RX1 (pin 19) and TX1 (pin 18) pins on the Arduino, and to the 5v and GND pins on the XBee Shield. The BME 688 connects to the 3.5V and GND as well as the SCA adn SCL pins on the Xbee Shield. The RX, TX, SCA, and SCL pins are for transmitting data from the sensor to the base station.
 ## Uploading Code
 1. Plug Arduino into a computer via USB.
 2. Compile and upload gpsmagtemp.ino to Transmitting Arduino. Ensure that the MCU-PC switch is set to PC on XBee Shield.
